@@ -61,7 +61,10 @@ class MealDetail extends StatelessWidget {
                           leading: CircleAvatar(
                             child: Text((index + 1).toString()),
                           ),
-                          title: Text(_meal.steps[index],style: TextStyle(fontSize: 14),),
+                          title: Text(
+                            _meal.steps[index],
+                            style: TextStyle(fontSize: 14),
+                          ),
                         ),
                         Divider()
                       ],
