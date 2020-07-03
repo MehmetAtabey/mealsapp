@@ -10,7 +10,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="mealsapp"
         android:icon="@mipmap/ic_launcher">
-        <activityflutt
+        <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
