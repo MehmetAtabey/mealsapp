@@ -71,6 +71,10 @@ class MealDetail extends StatelessWidget {
                     ),
                 itemCount: _meal.steps.length)),
           ],
-        )));
+        )),
+        floatingActionButton: FloatingActionButton(
+            backgroundColor: Theme.of(context).primaryColor,
+            child: Icon(Icons.delete),
+            onPressed: () => {Navigator.of(context).pop(_meal.id)}));
   }
 }

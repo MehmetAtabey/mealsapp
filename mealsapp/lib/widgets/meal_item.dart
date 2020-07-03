@@ -11,8 +11,8 @@ class MealItem extends StatelessWidget {
   // }
 
   void selectMeal(BuildContext ctx) {
-    Navigator.of(ctx)
-        .pushNamed(MealDetail.routeName, arguments: {'model': meal});
+    Navigator.of(ctx).pushNamed(MealDetail.routeName,
+        arguments: {'model': meal}).then((value) => null);
   }
 
   @override
