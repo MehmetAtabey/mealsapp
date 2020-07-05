@@ -13,6 +13,8 @@ class MainDrawer extends StatelessWidget {
         onTap: tapHandler);
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -33,7 +35,7 @@ class MainDrawer extends StatelessWidget {
         SizedBox(height: 20),
         buildlisttile("Meals", Icons.restaurant,
             () => Navigator.of(context).pushNamed("/")),
-        buildlisttile("Settings", Icons.settings,
+        buildlisttile("Filters", Icons.settings,
             () => Navigator.of(context).pushNamed(FilterScreen.routeName))
       ]),
     );
